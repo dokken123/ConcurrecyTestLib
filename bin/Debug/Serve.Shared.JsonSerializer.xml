@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Serve.Shared.JsonSerializer</name>
+    </assembly>
+    <members>
+        <member name="T:Serve.Shared.JsonSerializer.JsonHelper">
+            <summary>
+            Helper Class to Craete JSON structure
+            </summary>
+        </member>
+        <member name="M:Serve.Shared.JsonSerializer.JsonHelper.Format(System.String)">
+            <summary>
+            Formats the specified string to a JSON Format.
+            </summary>
+            <param name="str">String to be formatted</param>
+            <returns></returns>
+        </member>
+        <member name="T:Serve.Shared.JsonSerializer.Extensions">
+            <summary>
+            Extension Class for Enumeration
+            </summary>
+        </member>
+        <member name="M:Serve.Shared.JsonSerializer.Extensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})">
+            <summary>
+            Fors the each.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="ie">Type T.</param>
+            <param name="action">The action.</param>
+        </member>
+        <member name="T:Serve.Shared.JsonSerializer.Serializer">
+            <summary>
+            Class to Serialize Stream to JSON and Deserialise JSON to Stream
+            </summary>
+        </member>
+        <member name="M:Serve.Shared.JsonSerializer.Serializer.SerializeToJSON``1(``0)">
+            <summary>
+            Serializes object to string
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="t"></param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:Serve.Shared.JsonSerializer.Serializer.SerializeToStream``1(``0)">
+            <summary>
+            Serializes object to Stream
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="t"></param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:Serve.Shared.JsonSerializer.Serializer.DeserializeFromJSON``1(System.String)">
+            <summary>
+            Deserializes from JSON string to object
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="jsonString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Serve.Shared.JsonSerializer.Serializer.StreamtoToString(System.IO.Stream)">
+            <summary>
+            Gets string from string. Uses UTF-8 encoding
+            </summary>
+            <param name="stream"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Serve.Shared.JsonSerializer.Serializer.StringToStream(System.String)">
+            <summary>
+            Gets string from string. Uses UTF-8 encoding
+            </summary>
+            <param name="stream"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Serve.Shared.JsonSerializer.Serializer.DeserializeFromJSONStream``1(System.IO.Stream)">
+            <summary>
+            Deserialize from Stream to object
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="stream"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
